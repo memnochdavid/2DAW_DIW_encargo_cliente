@@ -1,0 +1,36 @@
+/* variables.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600&display=swap');
+
+:root {
+    /*colores*/
+    --color-primario: #3E6653;     /* Verde hoja */
+    --color-secundario: #9FB89F;   /* Verde suave */
+    --color-neutro-claro: #F8F6F1; /* Crema (fondo principal) */
+    --color-neutro-oscuro: #4B4B44;/* Gris cálido */
+    --color-acento: #E9CFC9;       /* Rosa pétalo */
+
+    /*tipografías*/
+    --fuente-titulos: 'Playfair Display', serif;
+    --fuente-texto: 'Lato', 'Nunito Sans', sans-serif;
+
+    /*tamaños de los textos*/
+    --h1-size: 48px;
+    --h2-size: 32px;
+    --h3-size: 20px;
+    --p-size: 16px;
+    --small-size: 14px;
+
+    /*weight de los textos*/
+    --peso-light: 300;
+    --peso-regular: 400;
+    --peso-semibold: 600;
+    --peso-bold: 700;
+
+    /*espacios y bordes*/
+    --radio-boton: 12px;
+    --radio-tarjeta: 16px;
+    --espaciado: 24px;
+
+    /*sombras*/
+    --sombra-suave: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
