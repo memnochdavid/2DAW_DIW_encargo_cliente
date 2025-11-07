@@ -1,4 +1,3 @@
-/* --- Estructura general --- */
 header {
     width: 100%;
     background-color: var(--color-secundario);
@@ -12,15 +11,19 @@ header {
     padding: 0.5rem;
 }
 
-/* --- Menú principal --- */
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3%;
+    padding: 0 2%;
     position: relative;
 }
-
+#menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
 #menu-button img {
     width: 40px;
     height: auto;
@@ -42,11 +45,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 3rem;
 }
 .iconos img {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     transition: filter 0.3s ease;
 
 }
@@ -54,7 +57,7 @@ header {
     filter: brightness(0) saturate(100%) invert(46%) sepia(26%) saturate(457%) hue-rotate(88deg) brightness(92%) contrast(92%);
 }
 
-/* --- Menú desplegable --- */
+/*desplegable*/
 .objetos-menu {
     background-color: var(--color-primario);
     list-style: none;
@@ -63,23 +66,38 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
     position: absolute;
     top: 150px;
-    /*left: -10px;*/
     width: 200px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    z-index: 1;
+    box-shadow: var(--sombra-suave);
+    transition: all 0.4s ease;
+    z-index: 10;
+
+    /* Estado inicial (oculto) */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
 }
 
-/* Ocultar menú por defecto */
 .oculto {
     display: none;
 }
-
-/* --- Items del menú --- */
+.objetos-menu.visible {
+    opacity: 1;
+    max-height: 500px;
+    pointer-events: all;
+}
+.objetos-menu {
+    transform: translateY(-10px);
+}
+.objetos-menu.visible {
+    transform: translateY(0);
+}
+.menu-item{
+    padding: var(--padding-grande);
+}
 .menu-item a {
     color: var(--color-neutro-claro);
     text-decoration: none;
@@ -91,8 +109,8 @@ header {
 .menu-item:hover {
     background-color: var(--color-secundario);
     width: 100%;
-    border-radius: 4px;
-    padding-left: 0.5rem;
+    /*border-radius: 4px;*/
+    /*padding-left: 0.5rem;*/
 }
 .menu-item a:hover {
     color: var(--color-neutro-oscuro);

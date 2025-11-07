@@ -8,3 +8,8 @@
     font-weight: var(--peso-regular);
     font-size: var(--p-size);
 }
+@media (max-width: 768px) {
+    .mini-banner {
+        display: none;
+    }
+}

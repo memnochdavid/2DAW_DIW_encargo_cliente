@@ -5,6 +5,10 @@
     <title>Pétalo&Co</title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/categories.js" defer></script>
+    <script src="./assets/js/faqs.js" defer></script>
+    <script src="./assets/js/footer.js" defer></script>
+    <script src="./assets/js/objetosMenu.js" defer></script>
 </head>
 <body>
 <header>
@@ -13,9 +17,9 @@
     </div>
 
     <div class="menu">
-        <a id="menu-button" aria-expanded="false">
+        <button id="menu-button" aria-expanded="false">
             <img src="./assets/img/menu.svg" alt="Abrir menú">
-        </a>
+        </button>
 
         <div class="logo">
             <a href="./index.html">
@@ -30,13 +34,7 @@
     </div>
 
     <nav>
-        <ul id="objetos-menu" class="objetos-menu oculto">
-            <li class="menu-item"><a href="#">Catálogo</a></li>
-            <li class="menu-item"><a href="#">Contacto</a></li>
-            <li class="menu-item"><a href="#">Envíos</a></li>
-            <li class="menu-item"><a href="#">Nosotras</a></li>
-            <li class="menu-item"><a href="#">FAQs</a></li>
-        </ul>
+        <ul id="objetos-menu" class="objetos-menu"></ul>
     </nav>
 </header>
 
@@ -54,13 +52,27 @@
             </div>
         </div>
         <div class="hero-claim">
-            <h1>Flores que hablan por ti.</h1>
+            <h1>Flores que hablan por tí</h1>
         </div>
     </section>
-    <section class="hero">
-
+    <section class="description">
+        <div>
+            <img src="./assets/img/flores/ramo-rosas-rojas-12ud-1-scaled-e1676804907282.jpg" alt="">
+        </div>
+        <div>
+            <h2>FLORISTERÍA EN GRANADA CAPITAL</h2>
+            <h3>UN OÁSIS DE PLANTAS Y FLORES EN LA CIUDAD</h3>
+            <p>En nuestra floristería en Granada, creemos que las flores son la excusa para iluminar cualquier espacio y transformar momentos ordinarios en extraordinarios. Queremos formar parte de tus celebraciones, aniversarios, cumpleaños y momentos especiales, brindándote el toque mágico y aromático que solo las flores pueden ofrecer.</p>
+        </div>
+    </section>
+    <section class="categories" id="categories-section"></section>
+    <section class="faqs" id="faqs-section">
+        <h2>Preguntas frecuentes</h2>
     </section>
 </main>
-<footer></footer>
+<footer>
+    <div></div>
+    <div id="copyright"></div>
+</footer>
 </body>
 </html>
