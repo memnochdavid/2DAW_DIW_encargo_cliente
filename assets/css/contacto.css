@@ -1,9 +1,9 @@
 /* Contenedor principal: dos columnas */
-.contacto-info {
+.info-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 2rem;
+    /*gap: 2rem;*/
     padding: 2rem 0;
 }
 
@@ -11,7 +11,7 @@
 #metodos-contacto-container {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    /*gap: 1.2rem;*/
     flex: 1; /* ocupa el mismo espacio que el mapa */
     max-width: 500px;
 }
@@ -20,7 +20,7 @@
 .metodo-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    /*gap: 1rem;*/
     background-color: var(--color-secundario, #f8f8f8);
     padding: 1rem;
     border-radius: 8px;
