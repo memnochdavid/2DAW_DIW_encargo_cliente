@@ -1,0 +1,78 @@
+/* Contenedor principal: dos columnas */
+.contacto-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* Columna izquierda (info) */
+#metodos-contacto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    flex: 1; /* ocupa el mismo espacio que el mapa */
+    max-width: 500px;
+}
+
+/* Cada método de contacto */
+.metodo-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-secundario, #f8f8f8);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.metodo-item:hover {
+    background-color: var(--color-primario-claro, #ececec);
+}
+
+/* Iconos */
+.metodo-item img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Texto */
+.metodo-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--color-neutro-oscuro, #333);
+    font-family: var(--fuente-texto, sans-serif);
+}
+
+/* Columna derecha (mapa) */
+#mapa-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapa-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/*!* Responsive *!*/
+/*@media (max-width: 768px) {*/
+/*    .contacto-info {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    #metodos-contacto-container {*/
+/*        max-width: 90%;*/
+/*    }*/
+
+/*    #mapa-container img {*/
+/*        max-width: 90%;*/
+/*    }*/
+/*}*/
