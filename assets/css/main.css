@@ -4,6 +4,8 @@
 @import url('./fotohero.css');
 @import url('./description.css');
 @import url('./categories.css');
+@import url('./catalogo.css');
+@import url('./producto.css');
 @import url('./faqs.css');
 @import url('./footer.css');
 
@@ -36,4 +38,7 @@ p{
     font-family: var(--fuente-texto), sans-serif;
     font-size: var(--p-size);
     font-weight: var(--peso-light);
+}
+html {
+    scroll-behavior: smooth;
 }

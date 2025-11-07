@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Pétalo&Co</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/productos.js" defer></script>
     <script src="./assets/js/menu.js" defer></script>
-    <script src="./assets/js/categories.js" defer></script>
-    <script src="./assets/js/faqs.js" defer></script>
     <script src="./assets/js/footer.js" defer></script>
     <script src="./assets/js/objetosMenu.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
 </head>
 <body>
 <header>
@@ -22,8 +22,13 @@
         </button>
 
         <div class="logo">
-            <a href="./index.html">
-                <img src="./assets/img/logo.png" alt="Logo de Pétalo&Co">
+            <a href="?page=inicio">
+                <picture>
+                    <!--pequeñas -->
+                    <source srcset="./assets/img/logo_texto.png" media="(max-width: 768px)">
+                    <!--por defecto -->
+                    <img src="./assets/img/logo.png" alt="Logo de Pétalo&Co">
+                </picture>
             </a>
         </div>
 
@@ -39,36 +44,7 @@
 </header>
 
 <main>
-    <section class="hero">
-        <div class="hero-somos">
-            <div class="card">
-                <h2>Diseñamos arreglos únicos con el alma de cada estación.</h2>
-                <h3>Servicio a domicilio con envío rápido. Envíos de compras online exclusivamente a Granada capital.</h3>
-                <h3>Plantas y flores frescas de calidad cultivadas en proximidad.</h3>
-
-            </div>
-            <div>
-                <a href="#" class="boton-1">Descubre nuestras flores</a>
-            </div>
-        </div>
-        <div class="hero-claim">
-            <h1>Flores que hablan por tí</h1>
-        </div>
-    </section>
-    <section class="description">
-        <div>
-            <img src="./assets/img/flores/ramo-rosas-rojas-12ud-1-scaled-e1676804907282.jpg" alt="">
-        </div>
-        <div>
-            <h2>FLORISTERÍA EN GRANADA CAPITAL</h2>
-            <h3>UN OÁSIS DE PLANTAS Y FLORES EN LA CIUDAD</h3>
-            <p>En nuestra floristería en Granada, creemos que las flores son la excusa para iluminar cualquier espacio y transformar momentos ordinarios en extraordinarios. Queremos formar parte de tus celebraciones, aniversarios, cumpleaños y momentos especiales, brindándote el toque mágico y aromático que solo las flores pueden ofrecer.</p>
-        </div>
-    </section>
-    <section class="categories" id="categories-section"></section>
-    <section class="faqs" id="faqs-section">
-        <h2>Preguntas frecuentes</h2>
-    </section>
+<!--contenido dinámico ;)-->
 </main>
 <footer>
     <div></div>

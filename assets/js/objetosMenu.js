@@ -20,12 +20,23 @@ document.addEventListener("DOMContentLoaded", () => {
         const enlace = document.createElement("a");
 
         switch (objeto) {
-            case "Catálogo": enlace.href = "#"; break;
-            case "Contacto": enlace.href = "#"; break;
-            case "Envíos": enlace.href = "#"; break;
-            case "Nosotras": enlace.href = "#"; break;
-            case "FAQs": enlace.href = "#"; break;
-            default: enlace.href = "#";
+            case "Catálogo":
+                enlace.href = "index.html?page=catalogo";
+                break;
+            case "Contacto":
+                enlace.href = "index.html?page=contacto";
+                break;
+            case "Envíos":
+                enlace.href = "index.html?page=envios";
+                break;
+            case "Nosotras":
+                enlace.href = "index.html?page=nosotras";
+                break;
+            case "FAQs":
+                enlace.href = "?page=inicio#faqs-section";
+                break;
+            default:
+                enlace.href = "index.html?page=inicio";
         }
 
         enlace.textContent = objeto;

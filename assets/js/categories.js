@@ -24,18 +24,15 @@ const categorias = [
 const contenedor = document.getElementById("categories-section");
 
 categorias.forEach(cat => {
-
     const card = document.createElement("article");
     card.classList.add("category-card");
 
-
     card.innerHTML = `
-    <img src="${cat.imagen}" alt="${cat.nombre}">
-    <h2>${cat.nombre}</h2>
-    <p>${cat.descripcion}</p>
-    <a href="#" class="boton-1">Ver más</a>
-  `;
-
+        <img src="${cat.imagen}" alt="${cat.nombre}">
+        <h2>${cat.nombre}</h2>
+        <p>${cat.descripcion}</p>
+        <a href="?page=catalogo&cat=${encodeURIComponent(cat.nombre)}" class="boton-1">Ver más</a>
+    `;
 
     contenedor.appendChild(card);
 });

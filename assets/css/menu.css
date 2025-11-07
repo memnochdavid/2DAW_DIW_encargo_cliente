@@ -74,7 +74,7 @@ header {
     transition: all 0.4s ease;
     z-index: 10;
 
-    /* Estado inicial (oculto) */
+    /*oculto*/
     opacity: 0;
     max-height: 0;
     overflow: hidden;
@@ -115,3 +115,9 @@ header {
 .menu-item a:hover {
     color: var(--color-neutro-oscuro);
 }
+/*@media (max-width: 768px) {*/
+/*    .logo img{*/
+/*        src*/
+/*    }*/
+
+/*}*/
