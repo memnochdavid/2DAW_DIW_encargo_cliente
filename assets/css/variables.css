@@ -1,21 +1,26 @@
 /* variables.css */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
     /*colores*/
     --color-primario: #3E6653;     /* Verde hoja */
     --color-secundario: #9FB89F;   /* Verde suave */
+    --color-secundario-trans: rgba(159, 184, 159, 0.47);   /* Verde suave */
     --color-neutro-claro: #F8F6F1; /* Crema (fondo principal) */
+    --color-neutro-claro-trans: rgba(248, 246, 241, 0.62); /* Crema (fondo principal) */
     --color-neutro-oscuro: #4B4B44;/* Gris cálido */
     --color-acento: #E9CFC9;       /* Rosa pétalo */
 
     /*tipografías*/
-    --fuente-titulos: 'Playfair Display', serif;
+    --fuente-h1:  "Edu NSW ACT Cursive", cursive;
+    --fuente-titulos: "Mulish", sans-serif;
     --fuente-texto: 'Lato', 'Nunito Sans', sans-serif;
 
     /*tamaños de los textos*/
     --h1-size: 48px;
-    --h2-size: 32px;
+    --h2-size: 28px;
     --h3-size: 20px;
     --p-size: 16px;
     --small-size: 14px;

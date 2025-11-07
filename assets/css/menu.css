@@ -1,0 +1,99 @@
+/* --- Estructura general --- */
+header {
+    width: 100%;
+    background-color: var(--color-secundario);
+}
+
+.mini-banner {
+    background-color: var(--color-primario);
+    color: var(--color-neutro-claro);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+/* --- Menú principal --- */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    position: relative;
+}
+
+#menu-button img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    border: none;
+
+    transition: transform 0.3s ease;
+}
+#menu-button:hover img {
+    transform: scale(1.1);
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.iconos img {
+    width: 25px;
+    height: 25px;
+    transition: filter 0.3s ease;
+
+}
+.iconos a:hover img {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(26%) saturate(457%) hue-rotate(88deg) brightness(92%) contrast(92%);
+}
+
+/* --- Menú desplegable --- */
+.objetos-menu {
+    background-color: var(--color-primario);
+    list-style: none;
+    padding: 1.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    position: absolute;
+    top: 150px;
+    /*left: -10px;*/
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+/* Ocultar menú por defecto */
+.oculto {
+    display: none;
+}
+
+/* --- Items del menú --- */
+.menu-item a {
+    color: var(--color-neutro-claro);
+    text-decoration: none;
+    font-family: var(--fuente-texto), sans-serif;
+    font-size: var(--p-size);
+    font-weight: var(--peso-regular);
+}
+
+.menu-item:hover {
+    background-color: var(--color-secundario);
+    width: 100%;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+}
+.menu-item a:hover {
+    color: var(--color-neutro-oscuro);
+}

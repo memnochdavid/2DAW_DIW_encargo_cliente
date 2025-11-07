@@ -1,0 +1,10 @@
+.mini-banner {
+    width: 100%;
+    padding: 1%;
+    font-family: var(--fuente-texto), sans-serif;
+    background-color: var(--color-primario);
+    color: var(--color-neutro-claro);
+    text-align: center;
+    font-weight: var(--peso-regular);
+    font-size: var(--p-size);
+}
