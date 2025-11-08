@@ -20,7 +20,8 @@ function mostrarProducto(id) {
                 <h2>${producto.nombre}</h2>
                 ${descripcionHTML}
                 <h3>Desde ${producto.precio} €</h3>
-                <p>Categoría: ${producto.cat}</p>
+                <p><b>Temporada:</b> ${producto.temp}</p>
+                <p><b>Categoría:</b> ${producto.cat}</p>
                 <a href="#" class="boton-1" id="btn-add-carrito-${producto.id}">Añadir al carrito</a>
             </div>
         </article>

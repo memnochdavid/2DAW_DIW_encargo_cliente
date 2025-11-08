@@ -12,7 +12,7 @@
     --color-neutro-claro-trans: rgba(248, 246, 241, 0.62); /* Crema (fondo principal) */
     --color-neutro-oscuro: #4B4B44;/* Gris cálido */
     --color-neutro-oscuro-trans: rgba(75, 75, 68, 0.85);/* Gris cálido transparente */
-    --color-acento: #E9CFC9;       /* Rosa pétalo */
+    --color-acento: #ff4b4b;       /* rojo no saturado */
 
     /*tipografías*/
     --fuente-h1:  "Edu NSW ACT Cursive", cursive;

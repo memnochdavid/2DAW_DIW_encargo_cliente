@@ -8,6 +8,7 @@ const productos = [
         nombre: '30 Rosas Rojas',
         precio: 90.00,
         cat: "Ramos",
+        temp: "Primavera",
         desc: "Ramo 30 Rosas rojas con verdes y rellenos disponibles. No incluye jarrón, ni decoración. Se entrega envuelto en papel y cinta de regalo",
     },
     {
@@ -16,6 +17,7 @@ const productos = [
         nombre: 'Ramo Rosas: 6 blancas y 6 rosas',
         precio: 55.50,
         cat: "Ramos",
+        temp: "Primavera",
         desc: "Ramo de 12 rosas, 6 rosas de color blanco y 6 rosas de color rosa. No incluye jarrón, ni decoración (foto orientativa). Con verdes y rellenos disponibles, se entrega envuelto en papel y cinta de regalo",
     },
     {
@@ -24,6 +26,7 @@ const productos = [
         nombre: 'Ramo florista',
         precio: 49.50,
         cat: "Ramos",
+        temp: "Primavera",
         desc: "Ramo con flores de temporada a elección de florista. No incluye jarrón, ni decoración (foto orientativa). Con flores, verdes y rellenos disponibles. Se entrega envuelto en papel y cinta de regalo.",
     },
     {
@@ -32,6 +35,7 @@ const productos = [
         nombre: 'Ramo 20 Tulipanes',
         precio: 49.00,
         cat: "Ramos",
+        temp: "Primavera",
         desc: "Ramo de 20 tulipanes, color según disponibilidad. No incluye jarrón, ni decoración, con verdes y rellenos disponibles (foto orientativa). Se entrega envuelto en papel y cinta de regalo.",
     },
     //centros
@@ -41,6 +45,7 @@ const productos = [
         nombre: 'Cesta de plantas grande',
         precio: 49.00,
         cat: "Centros",
+        temp: "Primavera",
         desc: "Cesta variada con plantas de interior, varios modelos (fotos orientativas)",
     },
     {
@@ -49,6 +54,7 @@ const productos = [
         nombre: 'Centro mediano',
         precio: 39.00,
         cat: "Centros",
+        temp: "Primavera",
         desc: "Cesta variada con plantas de interior, varios modelos (fotos orientativas)",
     },
     {
@@ -57,6 +63,7 @@ const productos = [
         nombre: 'Cúpula Cristal mediana Rosa Preservada',
         precio: 17.90,
         cat: "Centros",
+        temp: "Todo el año",
         desc: "Cúpula de cristal mediana de rosa preservada, color y modelo según disponibilidad. Altura aproximada 15cm. Se entrega envuelta en papel y cinta de regalo. Consúltanos por WhatsApp disponibilidad actual de colores y medidas (sino se enviará el color y modelo al azar).",
     },
     {
@@ -65,6 +72,7 @@ const productos = [
         nombre: 'Cúpula de Cristal mini de Rosa Preservada',
         precio: 11.90,
         cat: "Centros",
+        temp: "Todo el año",
         desc: "Cúpula de cristal mini de rosa preservada, color y modelo según disponibilidad. Altura aproximada 10cm. Se entrega envuelta en papel y cinta de regalo. Consúltanos por WhatsApp disponibilidad actual de colores y medidas (sino se enviará el color y modelo al azar).",
     },
     //plantas
@@ -74,6 +82,7 @@ const productos = [
         nombre: 'Bambú',
         precio: 14.90,
         cat: "Plantas",
+        temp: "Todo el año",
         desc: "6 varas de Bambú de 50 ó 60 cm de altura, rectas y curvas. No incluye jarrón, ni decoración. Se entrega en papel kraft y cinta de rafia",
     },
     {
@@ -82,7 +91,8 @@ const productos = [
         nombre: 'Anthurium',
         precio: 18.00,
         cat: "Plantas",
-        desc: "",
+        temp: "Todo el año",
+        desc: "Planta de interior en macetero de 12 cm o 14cm de diametro. No incluye macetero, ni decoración. Se entrega en papel y cinta de regalo",
     },
     {
         id: 216,
@@ -90,6 +100,7 @@ const productos = [
         nombre: 'Calatheas mix',
         precio: 15.00,
         cat: "Plantas",
+        temp: "Todo el año",
         desc: "Planta de interior en macetero de 12 cm o 14cm de diametro. No incluye macetero, ni decoración. Se entrega en papel y cinta de regalo",
     },
     {
@@ -98,6 +109,7 @@ const productos = [
         nombre: 'Ficus Ginseng',
         precio: 20.00,
         cat: "Plantas",
+        temp: "Primavera",
         desc: "En macetero de 12 cm de diámetro, no incluye macetero, se entrega en papel y cinta de regalo.",
     },
     //seco y preservado
@@ -107,6 +119,7 @@ const productos = [
         nombre: 'Ramo flores secas',
         precio: 25.00,
         cat: "Seco y preservado",
+        temp: "Todo el año",
         desc: "Ramo de flores secas preservadas, color según disponibilidad. No incluye jarrón, ni decoración, con verdes y rellenos disponibles (foto orientativa). Se entrega color al azar, envuelto en papel y cinta de regalo.",
     },
     {
@@ -115,6 +128,7 @@ const productos = [
         nombre: 'Paniculata',
         precio: 10.00,
         cat: "Seco y preservado",
+        temp: "Todo el año",
         desc: "No incluye jarrón, ni decoración. Se entrega en papel kraft y cinta de rafia",
     },
     {id: 219,
@@ -122,6 +136,7 @@ const productos = [
         nombre: 'Lavanda',
         precio: 15.00,
         cat: "Seco y preservado",
+        temp: "Todo el año",
         desc: "No incluye jarrón, ni decoración. Se entrega en papel kraft y cinta de rafia",
     },
     {
@@ -130,6 +145,7 @@ const productos = [
         nombre: 'Trigo',
         precio: 15.00,
         cat: "Seco y preservado",
+        temp: "Todo el año",
         desc: "No incluye jarrón, ni decoración. Se entrega en papel kraft y cinta de rafia",
     },
 ]

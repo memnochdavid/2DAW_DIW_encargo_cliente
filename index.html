@@ -5,9 +5,10 @@
     <title>Pétalo&Co</title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="./assets/js/productos.js" defer></script>
+    <script src="./assets/js/sesion.js" defer></script>
+    <script src="./assets/js/carrito.js" defer></script>
     <script src="./assets/js/menu.js" defer></script>
     <script src="./assets/js/footer.js" defer></script>
-    <script src="./assets/js/objetosMenu.js" defer></script>
     <script src="./assets/js/app.js" defer></script>
 </head>
 <body>
@@ -34,9 +35,13 @@
 
 <!--        botones para mostrar los diálogos flotantes-->
         <div class="iconos">
+
+            <!--        iniciar sesión-->
             <a href="javascript:void(0);" id="abrirDialogoUsuario">
                 <img src="./assets/img/user.png" alt="Perfil de usuario">
             </a>
+
+            <!--        carrito-->
             <a href="javascript:void(0);" id="abrirDialogoCarrito">
                 <img src="./assets/img/cart.svg" alt="Carrito de compra">
                 <span id="contador-carrito" class="contador-carrito">0</span>
@@ -44,6 +49,8 @@
         </div>
 
 <!--        diálogos ocultos-->
+
+
 <!--        iniciar sesión-->
         <dialog id="dialogoUsuario" class="dialogo-flotante">
             <div class="dialogo-contenido">
@@ -58,6 +65,7 @@
 
             </div>
         </dialog>
+
 <!--        carrito-->
         <dialog id="dialogoCarrito" class="dialogo-flotante">
             <div class="dialogo-contenido">
@@ -78,7 +86,9 @@
     </div>
 
     <nav>
-        <ul id="objetos-menu" class="objetos-menu"></ul>
+        <ul id="objetos-menu" class="objetos-menu">
+            <!--contenido dinámico ;)-->
+        </ul>
     </nav>
 </header>
 

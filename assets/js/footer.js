@@ -1,5 +1,5 @@
 const elementosCopyright = [
-    "Floristería Granada",
+    "Floristería Pétalo&Co",
     "Todos los derechos reservados",
     "C/Magnolia 12, 28000",
     "©2025 David Duque Díaz para Diseño de Interfaces Web"
