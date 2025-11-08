@@ -1,4 +1,4 @@
-footer div:nth-child(2){
+footer{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -9,8 +9,11 @@ footer div:nth-child(2){
     background-color: var(--color-primario);
     color: var(--color-neutro-claro);
     /*text-align: center;*/
+    /*position: sticky;*/
+    /*bottom: 0;*/
+    /*z-index: 100;*/
 }
-footer div:nth-child(2) p{
+footer p{
     font-weight: var(--peso-bold);
     font-size: var(--h3-size);
 }

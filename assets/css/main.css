@@ -1,3 +1,4 @@
+/*imports de todos los módilos*/
 @import url('./variables.css');
 @import url('./minibanner.css');
 @import url('./menu.css');
@@ -7,6 +8,7 @@
 @import url('./catalogo.css');
 @import url('./producto.css');
 @import url('./contacto.css');
+@import url('./nosotras.css');
 @import url('./faqs.css');
 @import url('./footer.css');
 
@@ -17,13 +19,27 @@
     box-sizing: border-box;
     /*background-color: var(--color-neutro-claro);*/
 }
-main{
+main {
     background-color: var(--color-neutro-claro);
+
+    /* ¡CRUCIAL! Esto fuerza al main a consumir todo el espacio sobrante */
+    flex-grow: 1;
+
+    /* Compensación del Header (Necesario para sticky) */
+    /* Asegúrate que este valor (ej. 120px) sea mayor que la altura de tu header */
+    /*padding-top: 120px;*/
+
+    /* Las siguientes ya las tenías y están bien */
+    height: auto;
+    overflow-y: visible;
+    box-sizing: border-box;
+    width: 100%;
 }
+
 h1, h2, h3, h4, h5, h6{
     font-family: var(--fuente-titulos), sans-serif;
 }
-h1{
+.hero-claim h1{
     font-family: var(--fuente-h1), sans-serif;
     font-size: var(--h1-size);
     font-weight: var(--peso-semibold);
@@ -44,4 +60,9 @@ p{
 }
 html {
     scroll-behavior: smooth;
+}
+html, body {
+    height: auto;
+    overflow: visible;
+    margin: 0;
 }

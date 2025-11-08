@@ -34,6 +34,7 @@
 
     /*espaciado*/
     --espaciado-letras: 2px;
+    --espaciado-lineas: 25px;
     /*--espaciado-palabras: 3px;*/
     --padding-min: 1%;
     --padding-general: 3%;

@@ -1,6 +1,9 @@
 header {
     width: 100%;
     background-color: var(--color-secundario);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .mini-banner {
@@ -15,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2%;
+    padding: 0 var(--padding-general);
     position: relative;
 }
 #menu-button {
