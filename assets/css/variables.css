@@ -34,7 +34,7 @@
 
     /*espaciado*/
     --espaciado-letras: 2px;
-    --espaciado-lineas: 25px;
+    --espaciado-lineas: 30px;
     /*--espaciado-palabras: 3px;*/
     --padding-min: 1%;
     --padding-general: 3%;
@@ -42,7 +42,7 @@
 
     /*espacios y bordes*/
     --radio-boton: 12px;
-    --radio-tarjeta: 16px;
+    --radio-tarjeta: 8px;
     --espaciado: 24px;
 
     /*sombras*/

@@ -6,19 +6,20 @@
 .nosotras-section h2 {
     font-size: 2.8em;
     color: var(--color-primario);
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: var(--espaciado-letras);
 }
 .nosotras-section p {
     line-height: var(--espaciado-lineas);
+    font-size: var(--h3-size);
+    letter-spacing: var(--espaciado-letras);
 }
 
 .nosotras-content {
     display: flex;
-    flex-direction: column;
-    /*gap: 30px;*/
-    /*align-items: stretch;*/
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     text-align: left;
     margin-top: 30px;
@@ -40,24 +41,24 @@
 
 .historia-texto strong {
     color: var(--color-primario);
+    font-weight: var(--peso-semibold);
 }
 
 .galeria-taller {
-    width: 30%;
+    width: 40%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: var(--padding-general);
+    background-color: var(--color-secundario-trans);
+    border-radius: var(--radio-tarjeta);
 }
 
 .galeria-taller img {
     width: 100%;
-    height: 180px;
+    height: 300px;
     object-fit: cover;
-    /*border-radius: 8px;*/
+    border-radius: var(--radio-tarjeta);
     box-shadow: var(--sombra-suave);
     transition: transform 0.3s ease;
 }
@@ -73,16 +74,31 @@
     font-size: 1.2em;
 }
 
-@media (min-width: 768px) {
-    .nosotras-content {
-        flex-direction: row;
-        align-items: center;
-    }
+@media (max-width: 768px) {
     .historia-texto {
         order: 1;
+        width: 90%;
     }
     .galeria-taller {
         order: 2;
         margin-top: 0;
+        width: 90%;
+
+    }
+}
+@media (max-width: 1190px) {
+    .nosotras-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .historia-texto {
+        order: 1;
+        width: 90%;
+    }
+    .galeria-taller {
+        order: 2;
+        margin-top: 0;
+        width: 90%;
     }
 }
