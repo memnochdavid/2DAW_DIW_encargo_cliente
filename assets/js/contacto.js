@@ -3,19 +3,19 @@ const rutaImg = "./assets/img/";
 const metodosContacto =[
     {
         icon: rutaImg + "phone.svg",
-        content: "958 26 56 09",
-    },
-    {
-        icon: rutaImg + "phone.svg",
-        content: "678 43 73 74",
+        content: "958 26 56 09  |   678 43 73 74",
     },
     {
         icon: rutaImg + "mail.svg",
         content: "hola@floristeriagranada.com",
     },
     {
+        icon: rutaImg + "address.svg",
+        content: "C/ Magnolia 12, 28000",
+    },
+    {
         icon: rutaImg + "time.svg",
-        content: "De lunes a sábado: 9:00-14:00",
+        content: "L–V M(0:00–14:00) / T(17:00–20:30) | S M(0:00–14:00)",
     },
 
 ]
@@ -33,3 +33,5 @@ metodosContacto.forEach(element => {
 
     contenedorContacto.appendChild(item);
 });
+
+

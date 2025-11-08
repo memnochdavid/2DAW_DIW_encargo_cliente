@@ -17,7 +17,9 @@
     box-sizing: border-box;
     /*background-color: var(--color-neutro-claro);*/
 }
-
+main{
+    background-color: var(--color-neutro-claro);
+}
 h1, h2, h3, h4, h5, h6{
     font-family: var(--fuente-titulos), sans-serif;
 }

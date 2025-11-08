@@ -1,78 +1,112 @@
-/* Contenedor principal: dos columnas */
-.info-container {
+.contacto-info {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    /*gap: 2rem;*/
-    padding: 2rem 0;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-/* Columna izquierda (info) */
+#info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 40%;
+    gap: 1.5rem;
+}
+#info-container h2 {
+    text-align: center;
+}
+
 #metodos-contacto-container {
     display: flex;
     flex-direction: column;
-    /*gap: 1.2rem;*/
-    flex: 1; /* ocupa el mismo espacio que el mapa */
-    max-width: 500px;
+    width: 100%;
 }
 
-/* Cada método de contacto */
 .metodo-item {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    /*gap: 1rem;*/
-    background-color: var(--color-secundario, #f8f8f8);
-    padding: 1rem;
-    border-radius: 8px;
-    transition: background 0.3s ease;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 2rem;
+    padding: var(--padding-general);
+    border-bottom: 1px solid var(--color-neutro-oscuro);
 }
 
-.metodo-item:hover {
-    background-color: var(--color-primario-claro, #ececec);
-}
+.metodo-item p{
+    font-weight: var(--peso-semibold);
 
-/* Iconos */
+}
 .metodo-item img {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) saturate(100%) invert(46%) sepia(26%) saturate(457%) hue-rotate(88deg) brightness(92%) contrast(92%);
 }
 
-/* Texto */
-.metodo-item p {
-    margin: 0;
-    font-size: 1rem;
-    color: var(--color-neutro-oscuro, #333);
-    font-family: var(--fuente-texto, sans-serif);
-}
-
-/* Columna derecha (mapa) */
 #mapa-container {
-    flex: 1;
+    width: 45%;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
 
 #mapa-container img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 100%;
+    height: auto;
+    transition: transform 1s ease;
+}
+#mapa-container img:hover {
+    transform: scale(4.5);
 }
 
-/*!* Responsive *!*/
-/*@media (max-width: 768px) {*/
-/*    .contacto-info {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        text-align: center;*/
-/*    }*/
+/*formulario*/
+.contacto-formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: var(--padding-general);
+}
 
-/*    #metodos-contacto-container {*/
-/*        max-width: 90%;*/
-/*    }*/
+#formulario-container {
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+}
 
-/*    #mapa-container img {*/
-/*        max-width: 90%;*/
-/*    }*/
-/*}*/
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: var(--padding-general);
+    /*border-radius: 8px;*/
+    border: 1px solid var(--color-primario);
+}
+@media (max-width: 1190px) {
+    .contacto-info{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #info-container{
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    #mapa-container{
+        display: none;
+    }
+    #formulario-container{
+        max-width: 90%;
+    }
+}
