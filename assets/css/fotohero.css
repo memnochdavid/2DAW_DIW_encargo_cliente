@@ -14,6 +14,7 @@
     width: 100%;
     background-color: var(--color-secundario-trans);
     text-align: center;
+    padding: var(--padding-min) 0;
 }
 
 .hero-somos {
@@ -76,6 +77,9 @@
         flex: auto;
         div{
             width: 90%;
+        }
+        h1{
+            font-size: var(--h2-size)!important;
         }
     }
 

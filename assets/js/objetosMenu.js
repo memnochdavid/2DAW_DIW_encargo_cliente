@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const objetosMenu = [
         "Catálogo",
         "Contacto",
-        "Envíos",
         "Nosotras",
         "FAQs",
     ];

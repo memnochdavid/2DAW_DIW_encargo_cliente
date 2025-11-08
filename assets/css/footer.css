@@ -1,7 +1,7 @@
 footer{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    /*gap: 2rem;*/
     justify-content: center;
     width: 100%;
     padding: 1%;
@@ -12,6 +12,11 @@ footer{
     /*position: sticky;*/
     /*bottom: 0;*/
     /*z-index: 100;*/
+}
+footer #copyright{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
 }
 footer p{
     font-weight: var(--peso-bold);

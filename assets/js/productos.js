@@ -133,3 +133,7 @@ const productos = [
         desc: "No incluye jarrón, ni decoración. Se entrega en papel kraft y cinta de rafia",
     },
 ]
+
+let compra = JSON.parse(localStorage.getItem('carritoPAGOS')) || [];
+
+// console.log("Carrito inicial cargado:", compra);

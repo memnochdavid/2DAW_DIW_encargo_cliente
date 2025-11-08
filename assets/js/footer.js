@@ -1,7 +1,7 @@
 const elementosCopyright = [
     "Floristería Granada",
     "Todos los derechos reservados",
-    "Avda. Doctor Olóriz, 6. Granada, 18012.",
+    "C/Magnolia 12, 28000",
     "©2025 David Duque Díaz para Diseño de Interfaces Web"
 ]
 const contenedorCopyright = document.getElementById("copyright");

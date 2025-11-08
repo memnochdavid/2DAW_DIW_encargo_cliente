@@ -1,6 +1,6 @@
-function mostrarProducto(id) {
-    const producto = productos.find(p => p.id == id);
 
+function mostrarProducto(id) {
+    const producto = productos.find(p => p.id === parseInt(id));
     const contenedor = document.getElementById("producto-section");
 
     if (!producto) {
@@ -8,7 +8,6 @@ function mostrarProducto(id) {
         return;
     }
 
-    // Divide la descripción en frases y genera párrafos
     const descripcionHTML = producto.desc
         .split(". ")
         .map(parrafo => `<p>${parrafo}.</p>`)
@@ -20,17 +19,54 @@ function mostrarProducto(id) {
             <div class="info">
                 <h2>${producto.nombre}</h2>
                 ${descripcionHTML}
-                <h3>${producto.precio} €</h3>
+                <h3>Desde ${producto.precio} €</h3>
                 <p>Categoría: ${producto.cat}</p>
-                <a href="#" class="boton-1">Añadir al carrito</a>
+                <a href="#" class="boton-1" id="btn-add-carrito-${producto.id}">Añadir al carrito</a>
             </div>
         </article>
     `;
-    relacionados(producto.cat);
+
+    const botonCarrito = document.getElementById(`btn-add-carrito-${producto.id}`);
+
+    botonCarrito.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        anadirAlCarrito(producto);
+
+        botonCarrito.textContent = '¡Añadido!';
+        setTimeout(() => {
+            botonCarrito.textContent = 'Añadir al carrito';
+        }, 1000);
+    });
+
+    relacionados(producto);
 }
 
-function relacionados(cat) {
-    const relacionados = productos.filter(p => p.cat === cat);
+function anadirAlCarrito(producto) {
+
+    const itemExistente = compra.find(item => item.id === producto.id);
+
+    if (itemExistente) {
+        itemExistente.cantidad++;
+    } else {
+        compra.push({
+            id: producto.id,
+            nombre: producto.nombre,
+            precio: producto.precio,
+            cantidad: 1
+        });
+        actualizarContador();
+    }
+
+    //localStorage
+    // convierte el array de JS a un string
+    localStorage.setItem('carritoPAGOS', JSON.stringify(compra));
+
+    console.log("Producto añadido y guardado. Contenido actual:", compra);
+}
+
+function relacionados(prod) {
+    const relacionados = productos.filter(p => p.cat === prod.cat && p.id !== prod.id);
     const contenedor = document.getElementById("productos-relacionados");
 
     // Limpiar contenido anterior

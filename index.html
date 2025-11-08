@@ -32,13 +32,19 @@
             </a>
         </div>
 
+<!--        botones para mostrar los diálogos flotantes-->
         <div class="iconos">
             <a href="javascript:void(0);" id="abrirDialogoUsuario">
                 <img src="./assets/img/user.png" alt="Perfil de usuario">
             </a>
-            <a href="#"><img src="./assets/img/cart.svg" alt="Carrito de compra"></a>
+            <a href="javascript:void(0);" id="abrirDialogoCarrito">
+                <img src="./assets/img/cart.svg" alt="Carrito de compra">
+                <span id="contador-carrito" class="contador-carrito">0</span>
+            </a>
         </div>
 
+<!--        diálogos ocultos-->
+<!--        iniciar sesión-->
         <dialog id="dialogoUsuario" class="dialogo-flotante">
             <div class="dialogo-contenido">
                 <h3>Acceso de Usuario</h3>
@@ -52,6 +58,23 @@
 
             </div>
         </dialog>
+<!--        carrito-->
+        <dialog id="dialogoCarrito" class="dialogo-flotante">
+            <div class="dialogo-contenido">
+                <h3>Tu carrito</h3>
+                <div id="carrito-contenido"></div>
+                <div class="carrito-total">
+                    <p><strong>Total:</strong> <span id="carrito-total">0 €</span></p>
+                </div>
+                <div class="carrito-acciones">
+                    <button class="boton-1" id="vaciarCarrito">Vaciar</button>
+                    <button class="boton-1">Finalizar compra</button>
+                </div>
+            </div>
+        </dialog>
+
+
+
     </div>
 
     <nav>
@@ -63,7 +86,9 @@
 <!--contenido dinámico ;)-->
 </main>
 <footer>
-    <div id="copyright"></div>
+    <div id="copyright">
+        <!--contenido dinámico ;)-->
+    </div>
 </footer>
 </body>
 </html>
