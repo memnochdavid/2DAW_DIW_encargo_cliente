@@ -33,9 +33,25 @@
         </div>
 
         <div class="iconos">
-            <a href="#"><img src="./assets/img/user.png" alt="Perfil de usuario"></a>
+            <a href="javascript:void(0);" id="abrirDialogoUsuario">
+                <img src="./assets/img/user.png" alt="Perfil de usuario">
+            </a>
             <a href="#"><img src="./assets/img/cart.svg" alt="Carrito de compra"></a>
         </div>
+
+        <dialog id="dialogoUsuario" class="dialogo-flotante">
+            <div class="dialogo-contenido">
+                <h3>Acceso de Usuario</h3>
+                <p>Inicia sesión para poder disfrutar de todas las ventajas.</p>
+
+                <form>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <input type="submit" class="boton-1" value="Iniciar Sesión"/>
+                </form>
+
+            </div>
+        </dialog>
     </div>
 
     <nav>

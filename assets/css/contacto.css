@@ -79,15 +79,14 @@
     margin: 0 auto;
 }
 
-#contact-form {
+form {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
 }
 
-#contact-form input,
-#contact-form textarea {
+input, textarea {
     width: 100%;
     padding: var(--padding-general);
     /*border-radius: 8px;*/

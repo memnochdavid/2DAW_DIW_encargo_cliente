@@ -69,7 +69,7 @@ header {
     position: absolute;
     top: 150px;
     width: 200px;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
     box-shadow: var(--sombra-suave);
     transition: all 0.4s ease;
     z-index: 10;
@@ -115,9 +115,62 @@ header {
 .menu-item a:hover {
     color: var(--color-neutro-oscuro);
 }
-/*@media (max-width: 768px) {*/
-/*    .logo img{*/
-/*        src*/
-/*    }*/
 
+
+/*botones de usuario y carrito*/
+
+.dialogo-flotante {
+    margin: auto;
+
+    border: none;
+    padding: 0;
+    /*border-radius: 10px;*/
+    box-shadow: var(--sombra-suave);
+
+    max-width: 400px;
+    width: 90%;
+}
+
+.dialogo-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: var(--padding-grande);
+    text-align: center;
+}
+
+/*.dialogo-contenido form {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 10px;*/
+/*    margin-top: 20px;*/
 /*}*/
+.dialogo-contenido form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.dialogo-contenido input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    /*border-radius: 5px;*/
+}
+
+.dialogo-contenido button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    /*border-radius: 5px;*/
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.dialogo-flotante::backdrop {
+    background-color: var(--color-neutro-oscuro-trans);
+}
