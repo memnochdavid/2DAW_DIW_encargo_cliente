@@ -7,6 +7,7 @@
     <script src="./assets/js/productos.js" defer></script>
     <script src="./assets/js/sesion.js" defer></script>
     <script src="./assets/js/carrito.js" defer></script>
+    <script src="./assets/js/cookies.js" defer></script>
     <script src="./assets/js/menu.js" defer></script>
     <script src="./assets/js/footer.js" defer></script>
     <script src="./assets/js/app.js" defer></script>
@@ -77,6 +78,21 @@
                 <div class="carrito-acciones">
                     <button class="boton-1" id="vaciarCarrito">Vaciar</button>
                     <button class="boton-1">Finalizar compra</button>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- cookies -->
+        <dialog id="cookieDialog" class="dialogo-flotante">
+            <div class="cookie-content">
+                <button id="cerrarCookies">X</button>
+                <p>
+                    Utilizamos cookies para mejorar tu experiencia en nuestro sitio.
+                    Al continuar navegando, aceptas nuestra política de cookies.
+                </p>
+                <div class="cookie-buttons">
+                    <button id="aceptarCookies" class="boton-1">Aceptar</button>
+                    <button id="rechazarCookies" class="boton-1">Rechazar</button>
                 </div>
             </div>
         </dialog>

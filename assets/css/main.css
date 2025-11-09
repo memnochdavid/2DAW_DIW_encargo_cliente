@@ -2,7 +2,7 @@
 @import url('./variables.css');
 @import url('./minibanner.css');
 @import url('./menu.css');
-@import url('./sesionYcarrito.css');
+@import url('sesionCarritoCookies.css');
 @import url('./fotohero.css');
 @import url('./description.css');
 @import url('./categories.css');

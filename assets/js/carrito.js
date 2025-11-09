@@ -1,6 +1,4 @@
-// ===========================
-// CARRITO
-// ===========================
+// carrito
 document.addEventListener('DOMContentLoaded', () => {
     const dialogoCarrito = document.getElementById('dialogoCarrito');
     const botonAbrirCarrito = document.getElementById('abrirDialogoCarrito');
@@ -8,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalCarrito = document.getElementById('carrito-total');
     const botonVaciar = document.getElementById('vaciarCarrito');
 
-    // 🔹 Renderiza los productos del carrito
     function actualizarCarrito() {
         contenedorCarrito.innerHTML = "";
 
@@ -36,14 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarContador();
     }
 
-    // 🔹 Mostrar el diálogo del carrito
     botonAbrirCarrito.addEventListener('click', (e) => {
         e.preventDefault();
         actualizarCarrito();
         dialogoCarrito.showModal();
     });
 
-    // 🔹 Cerrar si se hace clic fuera del diálogo
     dialogoCarrito.addEventListener('click', (e) => {
         const rect = dialogoCarrito.getBoundingClientRect();
         const dentroDialogo =
@@ -55,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 🔹 Vaciar carrito
     botonVaciar.addEventListener('click', () => {
         compra.length = 0; // vacía el array sin perder referencia
         localStorage.setItem('carritoPAGOS', JSON.stringify(compra)); // guarda el cambio
@@ -63,13 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarContador();
     });
 
-    // 🔹 Al cargar la página, muestra el contador actualizado
     actualizarContador();
 });
 
-// ===========================
-// CONTADOR DE CARRITO
-// ===========================
 const contadorCarrito = document.getElementById('contador-carrito');
 
 function actualizarContador() {
