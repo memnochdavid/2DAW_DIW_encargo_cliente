@@ -78,41 +78,25 @@
 
 
 /*cookies*/
-
+/*#cookieDialog{*/
+/*    padding: var(--padding-grande);*/
+/*}*/
 
 .cookie-content {
-    background-color: #fff;
-    padding: 1.5rem;
+    background-color: var(--color-neutro-claro);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--padding-grande);
+    gap: 1rem;
 }
-
-.cookie-content p {
-    margin-bottom: 1rem;
-    color: #333;
-    font-size: 0.95rem;
-}
-
-.boton-1 {
-    background-color: #7fb77e;
-    color: white;
+.cookie-content>button{
+    align-self: end;
+    background: none;
     border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 0.5rem;
     cursor: pointer;
-    font-size: 1rem;
+    padding: 0;
 }
 
-.boton-1:hover {
-    background-color: #6ba86b;
-}
-
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}

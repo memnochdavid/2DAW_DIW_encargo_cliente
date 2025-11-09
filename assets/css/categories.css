@@ -31,12 +31,13 @@
 }
 
 .category-card h3 {
-    font-family: var(--fuente-titulos);
+    font-family: var(--fuente-titulos), sans-serif;
+    padding: 0 var(--padding-min);
     margin-top: 1rem;
 }
 
 .category-card p {
-    font-family: var(--fuente-texto);
+    font-family: var(--fuente-texto), sans-serif;
     padding: 0 1rem;
     color: var(--color-neutro-oscuro);
 }
