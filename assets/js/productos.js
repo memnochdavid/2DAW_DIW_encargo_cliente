@@ -152,4 +152,4 @@ const productos = [
 
 let compra = JSON.parse(localStorage.getItem('carritoPAGOS')) || [];
 
-// console.log("Carrito inicial cargado:", compra);
+console.log("Carrito inicial cargado:", compra);

@@ -11,8 +11,16 @@ if (categoriaSeleccionada) {
     productosFiltrados = productos.filter(p => p.cat === categoriaSeleccionada);
 }
 
+
+//titulo
+// const titulo = document.getElementById("categoria-titulo")
+// titulo.innerHTML = `
+//         <h1>Categoría ${productosFiltrados[0].cat}</h1>
+//     `;
+
 // Mostrar los productos (filtrados o todos)
 productosFiltrados.forEach(prod => {
+
     const card = document.createElement("article");
     card.classList.add("product-card");
 

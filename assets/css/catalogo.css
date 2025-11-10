@@ -1,4 +1,5 @@
 .catalogo-section {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -7,7 +8,10 @@
     padding: var(--padding-grande);
     background-color: var(--color-secundario);
 }
-
+#categoria-titulo h1{
+    text-align: center;
+    padding: var(--padding-grande);
+}
 .product-card {
     width: 280px;
     background-color: white;
@@ -30,8 +34,10 @@
     object-fit: cover;
 }
 
+
+
 .product-card h3 {
-    font-family: var(--fuente-titulos);
+    font-family: var(--fuente-titulos), sans-serif;
     margin-top: 1rem;
 }
 .product-card h2 {
@@ -39,7 +45,7 @@
 }
 
 .product-card p {
-    font-family: var(--fuente-texto);
+    font-family: var(--fuente-texto), sans-serif;
     padding: 0 1rem;
     color: var(--color-neutro-oscuro);
 }
