@@ -7,7 +7,9 @@
     padding: var(--padding-grande);
     background-color: var(--color-secundario);
 }
-
+.categories h2{
+    text-align: center;
+}
 .category-card {
     width: 280px;
     background-color: white;

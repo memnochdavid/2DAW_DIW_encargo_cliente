@@ -11,7 +11,7 @@ const metodosContacto =[
     },
     {
         icon: rutaImg + "address.svg",
-        content: "C/ Magnolia 12, 28000",
+        content: "C/ Magnolia 12, 28000, Granada",
     },
     {
         icon: rutaImg + "time.svg",
@@ -26,9 +26,23 @@ metodosContacto.forEach(element => {
     const item = document.createElement("div");
     item.classList.add("metodo-item");
 
+    let contentHTML = `<p>${element.content}</p>`;
+
+    if (element.content.includes("C/")) {
+        const addressEncoded = encodeURIComponent(element.content);
+
+        const mapsURL = `https://www.google.com/maps/search/?api=1&query=${addressEncoded}`;
+
+        contentHTML = `
+            <a href="${mapsURL}" target="_blank" rel="noopener noreferrer">
+                ${element.content}
+            </a>
+        `;
+    }
+
     item.innerHTML = `
         <img src="${element.icon}" alt="">
-        <p>${element.content}</p>
+        ${contentHTML}
     `;
 
     contenedorContacto.appendChild(item);

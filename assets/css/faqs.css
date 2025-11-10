@@ -8,7 +8,7 @@
 
 .faqs h2 {
     text-align: center;
-    font-family: var(--fuente-titulos);
+    font-family: var(--fuente-titulos), sans-serif;
     margin-bottom: 2rem;
 }
 
@@ -23,7 +23,7 @@
     background: none;
     border: none;
     text-align: left;
-    font-family: var(--fuente-titulos);
+    font-family: var(--fuente-titulos), sans-serif;
     font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
@@ -41,7 +41,7 @@
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
     color: var(--color-neutro-oscuro);
-    font-family: var(--fuente-texto);
+    font-family: var(--fuente-texto), sans-serif;
 }
 
 .faq-respuesta.visible {

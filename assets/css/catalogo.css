@@ -8,10 +8,12 @@
     padding: var(--padding-grande);
     background-color: var(--color-secundario);
 }
+
 #categoria-titulo h1{
     text-align: center;
     padding: var(--padding-grande);
 }
+
 .product-card {
     width: 280px;
     background-color: white;

@@ -23,6 +23,7 @@ const categorias = [
 
 const contenedor = document.getElementById("categories-section");
 
+
 categorias.forEach(cat => {
     const card = document.createElement("article");
     card.classList.add("category-card");

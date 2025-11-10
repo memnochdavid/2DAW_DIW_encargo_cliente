@@ -22,3 +22,10 @@ footer p{
     font-weight: var(--peso-bold);
     font-size: var(--h3-size);
 }
+@media (max-width: 768px) {
+    footer #copyright{
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

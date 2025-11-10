@@ -7,7 +7,7 @@
     /*colores*/
     --color-primario: #3E6653;     /* Verde hoja */
     --color-secundario: #9FB89F;   /* Verde suave */
-    --color-secundario-trans: rgba(159, 184, 159, 0.47);   /* Verde suave */
+    --color-secundario-trans: rgba(0, 0, 0, 0.35);   /* Verde suave */
     --color-neutro-claro: #F8F6F1; /* Crema (fondo principal) */
     --color-neutro-claro-trans: rgba(248, 246, 241, 0.62); /* Crema (fondo principal) */
     --color-neutro-oscuro: #4B4B44;/* Gris cálido */

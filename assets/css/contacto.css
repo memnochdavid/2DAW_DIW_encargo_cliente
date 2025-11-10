@@ -14,6 +14,7 @@
     width: 40%;
     gap: 1.5rem;
 }
+
 #info-container h2 {
     text-align: center;
 }
@@ -33,6 +34,15 @@
     gap: 2rem;
     padding: var(--padding-general);
     border-bottom: 1px solid var(--color-neutro-oscuro);
+}
+.metodo-item a{
+    text-decoration: none;
+    /*color: var(--color-neutro-oscuro);*/
+    font-family: var(--fuente-texto), sans-serif;
+    font-size: var(--p-size);
+    font-weight: var(--peso-semibold);
+    color: black;
+
 }
 
 .metodo-item p{
