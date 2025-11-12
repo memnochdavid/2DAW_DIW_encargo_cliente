@@ -26,6 +26,8 @@
 }
 .producto-ficha img{
     width: 500px;
+    height: 500px;
+    object-fit: cover;
     border-radius: 0 var(--radio-tarjeta) 0 var(--radio-tarjeta);
 }
 
@@ -38,7 +40,9 @@
 #productos-relacionados h2{
     text-align: center;
 }
-#productos-relacionados div{
+#productos-relacionados div {
+    width: 75%;
+    margin: auto;
     display: flex;
     padding: var(--padding-grande);
     gap: 1rem;
@@ -48,6 +52,7 @@
 }
 .relacionado-card{
     width: 200px;
+    height: 330px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -66,7 +71,9 @@
 }
 
 .relacionado-card img{
-    width: 200px;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
 }
 .relacionado-card p{
     text-overflow: ellipsis;
@@ -83,6 +90,7 @@
 @media (max-width: 1190px) {
     .producto-ficha{
         flex-direction: column;
+        text-align: center;
         gap: 1rem;
     }
     .producto-ficha div{

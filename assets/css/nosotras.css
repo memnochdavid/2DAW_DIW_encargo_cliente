@@ -1,16 +1,22 @@
 .nosotras-section {
     padding: var(--padding-grande);
     text-align: center;
+    background-color: var(--color-neutro-claro);
+
 }
 
 .nosotras-section h2 {
     font-size: 2.8em;
-    color: var(--color-primario);
+    /*color: var(--color-primario);*/
     /*margin-bottom: 25px;*/
     font-weight: bold;
     letter-spacing: var(--espaciado-letras);
     text-align: center;
     margin-bottom: var(--padding-general);
+    border-radius: var(--radio-tarjeta) 0 var(--radio-tarjeta) 0;
+    background-color: var(--color-primario);
+    color: var(--color-neutro-claro);
+    padding: 0 var(--padding-grande);
 }
 .nosotras-section p {
     line-height: var(--espaciado-lineas);
@@ -50,9 +56,11 @@
     width: 40%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-template-columns: repeat(2, 1fr);*/
     gap: 1rem;
     padding: var(--padding-general);
-    background-color: var(--color-secundario-trans);
+    background-color: var(--color-secundario);
+
     border-radius: var(--radio-tarjeta);
 }
 

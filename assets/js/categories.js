@@ -2,22 +2,22 @@ const categorias = [
     {
         nombre: "Ramos",
         descripcion: "Clásicos y modernos para cada ocasión.",
-        imagen: "./assets/img/flores/1000043426.jpg",
+        imagen: "./assets/img/flores/ramo-una-rosa.jpg",
     },
     {
         nombre: "Centros",
         descripcion: "Composiciones que transforman espacios.",
-        imagen: "./assets/img/flores/426280fb-74f9-4a97-9b54-edea622b3a08-1_all_144241.jpg",
+        imagen: "./assets/img/flores/centro-florecillas1.jpg",
     },
     {
         nombre: "Plantas",
         descripcion: "Verde todo el año, bajo mantenimiento.",
-        imagen: "./assets/img/flores/zamioculca2-scaled-e1676805365692-1024x1024.jpg",
+        imagen: "./assets/img/flores/centro2.jpg",
     },
     {
         nombre: "Seco y preservado",
         descripcion: "Un toque de añoranza para tu hogar.",
-        imagen: "./assets/img/flores/trigo2-scaled-e1676805839351-1024x1024.jpg",
+        imagen: "./assets/img/flores/secos-lavanda1.jpg",
     }
 ];
 
