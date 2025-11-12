@@ -39,15 +39,16 @@
     padding: 3%;
     /*border: 1px solid whitesmoke;*/
     /*border-radius: var(--radio-tarjeta);*/
-    /*background-color: var(--color-secundario-trans);*/
+    background-color: var(--color-secundario-trans);
     /*transition: transform 0.3s ease;*/
 }
 /*.hero-somos>.card:hover{*/
 /*    transform: scale(1.1);*/
 /*}*/
 .hero-somos>.card h2, h3{
-    color: var(--color-primario);
+    color: var(--color-neutro-claro);
     font-weight: var(--peso-bold);
+    font-size: var(--h1-size);
 }
 
  .boton-1 {

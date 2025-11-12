@@ -20,6 +20,7 @@ const metodosContacto =[
 
 ]
 
+
 const contenedorContacto = document.getElementById("metodos-contacto-container");
 
 metodosContacto.forEach(element => {
