@@ -20,7 +20,7 @@
     /*background-color: var(--color-neutro-claro);*/
 }
 main {
-    background-color: var(--color-neutro-claro);
+    background-color: var(--color-secundario);
     flex-grow: 1;
     height: auto;
     overflow-y: visible;

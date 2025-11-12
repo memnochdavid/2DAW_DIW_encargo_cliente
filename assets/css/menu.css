@@ -118,4 +118,6 @@ header {
 .menu-item a:hover {
     color: var(--color-neutro-oscuro);
 }
-
+#cerrarCookies{
+    font-size: var(--h2-size);
+}

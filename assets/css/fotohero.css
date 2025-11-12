@@ -45,10 +45,12 @@
 /*.hero-somos>.card:hover{*/
 /*    transform: scale(1.1);*/
 /*}*/
-.hero-somos>.card h2, h3{
-    color: var(--color-neutro-claro);
-    font-weight: var(--peso-bold);
-    font-size: var(--h1-size);
+.hero-somos .card{
+    h2, h3{
+        color: var(--color-neutro-claro);
+        /*font-weight: var(--peso-bold);*/
+        /*font-size: var(--h1-size);*/
+    }
 }
 
  .boton-1 {
@@ -63,8 +65,9 @@
 
     /*border: 1px solid var(--color-primario);*/
     /*border: 1px solid var(--color-primario);*/
-    /*border-radius: var(--radio-boton);*/
-    background-color: var(--color-primario);
+     border-radius: var(--radio-tarjeta) 0 var(--radio-tarjeta) 0;
+
+     background-color: var(--color-primario);
     color: var(--color-neutro-claro);
 }
 .boton-1:hover {

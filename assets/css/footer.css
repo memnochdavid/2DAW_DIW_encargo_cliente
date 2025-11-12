@@ -6,6 +6,7 @@ footer{
     width: 100%;
     padding: 1%;
     font-family: var(--fuente-texto), sans-serif;
+
     background-color: var(--color-primario);
     color: var(--color-neutro-claro);
     /*text-align: center;*/
@@ -18,9 +19,9 @@ footer #copyright{
     gap: 1rem;
     text-align: center;
 }
-footer p{
-    font-weight: var(--peso-bold);
-    font-size: var(--h3-size);
+footer span{
+    font-weight: var(--peso-regular);
+    font-size: var(--p-size);
 }
 @media (max-width: 768px) {
     footer #copyright{

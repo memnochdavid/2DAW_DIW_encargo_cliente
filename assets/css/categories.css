@@ -11,12 +11,15 @@
     text-align: center;
 }
 .category-card {
+    display: flex;
+    flex-direction: column;
     width: 280px;
     background-color: white;
-    /*border-radius: var(--radio-boton);*/
-    /*box-shadow: 0 4px 10px rgba(0,0,0,0.1);*/
+    border-radius: 0 var(--radio-tarjeta) 0 var(--radio-tarjeta);
+    box-shadow: var(--sombra-suave);
     text-align: center;
     overflow: hidden;
+    gap: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -31,7 +34,9 @@
     height: 200px;
     object-fit: cover;
 }
-
+.category-card h2 {
+    padding: 0 var(--padding-grande);
+}
 .category-card h3 {
     font-family: var(--fuente-titulos), sans-serif;
     padding: 0 var(--padding-min);

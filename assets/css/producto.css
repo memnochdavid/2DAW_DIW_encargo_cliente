@@ -2,6 +2,12 @@
     display: flex;
     justify-content: center;
     padding: var(--padding-grande);
+    background-color: var(--color-neutro-claro);
+    width: 90%;
+    margin: auto auto var(--padding-general) auto ;
+    border-radius: var(--radio-tarjeta) 0 var(--radio-tarjeta) 0;
+
+
 }
 .producto-ficha{
     display: flex;
@@ -20,10 +26,13 @@
 }
 .producto-ficha img{
     width: 500px;
+    border-radius: 0 var(--radio-tarjeta) 0 var(--radio-tarjeta);
 }
 
 #productos-relacionados{
     display: flex;
+    padding-top: var(--padding-grande);
+    background-color: var(--color-neutro-claro);
     flex-direction: column;
 }
 #productos-relacionados h2{
@@ -42,6 +51,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    overflow: hidden;
+    background-color: white;
+    /*border: 100px solid black;*/
+    border-radius: var(--radio-tarjeta) 0 var(--radio-tarjeta) 0;
+
+    /*box-shadow: var(--sombra-suave);*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -53,12 +68,18 @@
 .relacionado-card img{
     width: 200px;
 }
-.relacionado-card h3{
+.relacionado-card p{
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
-}
+    /*white-space: nowrap;*/
+    padding: var(--padding-grande);
+    text-align: center;
 
+}
+.relacionado-card .boton-1{
+    margin: 1rem auto 1.5rem;
+    display: inline-block;
+}
 @media (max-width: 1190px) {
     .producto-ficha{
         flex-direction: column;

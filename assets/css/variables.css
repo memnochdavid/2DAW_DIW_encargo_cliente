@@ -8,7 +8,7 @@
     --color-primario: #3E6653;     /* Verde hoja */
     --color-secundario: #9FB89F;   /* Verde suave */
     --color-secundario-trans: rgba(0, 0, 0, 0.35);   /* Verde suave */
-    --color-neutro-claro: #F8F6F1; /* Crema (fondo principal) */
+    --color-neutro-claro: #ece9e1; /* Crema (fondo principal) */
     --color-neutro-claro-trans: rgba(248, 246, 241, 0.62); /* Crema (fondo principal) */
     --color-neutro-oscuro: #4B4B44;/* Gris cálido */
     --color-neutro-oscuro-trans: rgba(75, 75, 68, 0.85);/* Gris cálido transparente */
@@ -20,10 +20,10 @@
     --fuente-texto: 'Lato', 'Nunito Sans', sans-serif;
 
     /*tamaños de los textos*/
-    --h1-size: 48px;
-    --h2-size: 28px;
-    --h3-size: 20px;
-    --p-size: 16px;
+    --h1-size: 45px;
+    --h2-size: 32px;
+    --h3-size: 25px;
+    --p-size: 20px;
     --small-size: 14px;
 
     /*weight de los textos*/
@@ -42,9 +42,9 @@
 
     /*espacios y bordes*/
     --radio-boton: 12px;
-    --radio-tarjeta: 8px;
+    --radio-tarjeta: 15px;
     --espaciado: 24px;
 
     /*sombras*/
-    --sombra-suave: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --sombra-suave: 0 4px 6px rgba(0, 0, 0, 0.23);
 }

@@ -88,7 +88,7 @@ function relacionados(prod) {
 
         card.innerHTML = `
             <img src="${relacionado.img}" alt="${relacionado.nombre}">
-            <h3>${relacionado.nombre}</h3>
+            <p>${relacionado.nombre}</p>
             <a href="?page=producto&id=${relacionado.id}" class="boton-1">Ver más</a>
         `;
 

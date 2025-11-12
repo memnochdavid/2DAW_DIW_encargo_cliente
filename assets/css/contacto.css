@@ -1,9 +1,14 @@
 .contacto-info {
     display: flex;
-    justify-content: space-evenly;
+    width: 90%;
+    justify-content: space-around;
     align-items: stretch;
     gap: 2rem;
     padding: 2rem;
+    margin: auto;
+    background-color: var(--color-neutro-claro);
+    border-radius: var(--radio-tarjeta) 0 var(--radio-tarjeta) 0;
+    overflow: hidden;
 }
 
 #info-container {
@@ -74,13 +79,18 @@
 
 /*formulario*/
 .contacto-formulario {
-    width: 100%;
+    width: 90%;
+    background-color: var(--color-neutro-claro);
+    margin: var(--padding-grande) var(--padding-grande) 0 var(--padding-grande);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
     padding: var(--padding-general);
+    border-radius: var(--radio-tarjeta) 0 0 0;
+
+
 }
 
 #formulario-container {

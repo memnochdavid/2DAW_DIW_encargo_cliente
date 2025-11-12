@@ -6,7 +6,7 @@
     gap: 2rem;
     /*justify-content: center;*/
     padding: var(--padding-grande);
-    background-color: var(--color-secundario);
+    background-color: var(--color-neutro-claro);
 }
 
 #categoria-titulo h1{
@@ -17,7 +17,7 @@
 .product-card {
     width: 280px;
     background-color: white;
-    /*border-radius: var(--radio-boton);*/
+    border-radius: 0 var(--radio-tarjeta) 0 var(--radio-tarjeta);
     /*box-shadow: 0 4px 10px rgba(0,0,0,0.1);*/
     text-align: center;
     overflow: hidden;
@@ -41,6 +41,8 @@
 .product-card h3 {
     font-family: var(--fuente-titulos), sans-serif;
     margin-top: 1rem;
+    padding: 0 var(--padding-grande);
+
 }
 .product-card h2 {
     padding: var(--padding-min) var(--padding-grande);
