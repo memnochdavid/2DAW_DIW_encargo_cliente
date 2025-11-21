@@ -47,4 +47,5 @@
 
     /*sombras*/
     --sombra-suave: 0 4px 6px rgba(0, 0, 0, 0.23);
+    --sombra-max: 0 6px 6px rgba(0, 0, 0, 0.54);
 }

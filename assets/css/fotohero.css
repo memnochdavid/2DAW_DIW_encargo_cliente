@@ -3,25 +3,46 @@
     flex-direction: column;
     width: 100%;
     min-height: 500px;
-    background-image: url('../img/hero_image.avif');
+    background-image: url('../img/banner.webp');
     background-size: cover;
     background-position: center;
     align-items: center;
     justify-content: space-between;
 }
-
+.deco{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    align-items: center;
+    img{
+        width: 200px;
+        height: 230px;
+    }
+    .deco-right{
+        align-self: flex-end;
+        margin-right: 25px;
+    }
+    .deco-left{
+        align-self: flex-start;
+        margin-left: 25px;
+    }
+}
 .hero-claim {
     width: 100%;
     background-color: var(--color-secundario-trans);
     text-align: center;
     padding: var(--padding-min) 0;
+    h1{
+        color: white;
+    }
 }
 
 .hero-somos {
     flex: 1;
     /*width: 100%;*/
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     padding: var(--padding-general) 0;
@@ -37,9 +58,10 @@
     flex-direction: column;
     gap: 1rem;
     padding: 3%;
+    width: 90%;
     /*border: 1px solid whitesmoke;*/
     /*border-radius: var(--radio-tarjeta);*/
-    background-color: var(--color-secundario-trans);
+    /*background-color: var(--color-secundario-trans);*/
     /*transition: transform 0.3s ease;*/
 }
 /*.hero-somos>.card:hover{*/
@@ -47,9 +69,10 @@
 /*}*/
 .hero-somos .card{
     h2, h3{
-        color: var(--color-neutro-claro);
-        /*font-weight: var(--peso-bold);*/
+        color: white;
+        font-weight: var(--peso-bold);
         /*font-size: var(--h1-size);*/
+        text-shadow: var(--sombra-max);
     }
 }
 
@@ -89,5 +112,23 @@
             font-size: var(--h2-size)!important;
         }
     }
+    .deco{
+        display: none;
+    }
 
+}
+@media (max-width: 920px) {
+    .hero-somos{
+        flex-direction: column;
+        flex: auto;
+        div{
+            width: 90%;
+        }
+        h1{
+            font-size: var(--h2-size)!important;
+        }
+    }
+    .deco{
+        display: none;
+    }
 }
