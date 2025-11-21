@@ -18,6 +18,8 @@
     img{
         width: 200px;
         height: 230px;
+        filter: drop-shadow(0 6px 6px rgb(231, 129, 169));
+
     }
     .deco-right{
         align-self: flex-end;
@@ -33,9 +35,9 @@
     background-color: var(--color-secundario-trans);
     text-align: center;
     padding: var(--padding-min) 0;
-    h1{
-        color: white;
-    }
+    /*h1{*/
+    /*    color: white;*/
+    /*}*/
 }
 
 .hero-somos {
@@ -68,8 +70,17 @@
 /*    transform: scale(1.1);*/
 /*}*/
 .hero-somos .card{
+    h1{
+        color: white;
+        font-family: var(--fuente-h1), sans-serif;
+        font-size: var(--h1-size);
+        text-align: center;
+        font-weight: var(--peso-bold);
+        text-shadow: var(--sombra-max);
+    }
     h2, h3{
         color: white;
+        /*-webkit-text-stroke: 1px var(--color-neutro-oscuro);*/
         font-weight: var(--peso-bold);
         /*font-size: var(--h1-size);*/
         text-shadow: var(--sombra-max);
