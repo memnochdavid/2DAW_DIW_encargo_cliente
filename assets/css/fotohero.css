@@ -19,7 +19,6 @@
         width: 200px;
         height: 230px;
         filter: drop-shadow(0 6px 6px var(--color-acento2));
-
     }
     .deco-right{
         align-self: flex-end;
