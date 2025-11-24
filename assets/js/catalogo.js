@@ -1,15 +1,22 @@
-const contenedor = document.getElementById("catalogo-section");
+const contenedor = document.getElementById("catalogo-container");
 
 // Obtener categoría desde la URL
 const params = new URLSearchParams(window.location.search);
 const categoriaSeleccionada = params.get("cat");
 
 let productosFiltrados = productos;
-
+let tituloTexto = "Mostrando todas las categorías";
 // Si hay una categoría seleccionada, filtramos
 if (categoriaSeleccionada) {
     productosFiltrados = productos.filter(p => p.cat === categoriaSeleccionada);
+    tituloTexto = `Mostrando ${categoriaSeleccionada}`;
 }
+const titulo = document.getElementById("titulo-categoria-catalogo");
+const h1 = document.createElement("h1");
+h1.classList.add("titulo-categoria-catalogo");
+h1.innerHTML = tituloTexto;
+titulo.appendChild(h1);
+
 
 
 //titulo

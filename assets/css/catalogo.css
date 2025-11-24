@@ -1,4 +1,4 @@
-.catalogo-section {
+#catalogo-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -9,9 +9,10 @@
     background-color: var(--color-neutro-claro);
 }
 
-#categoria-titulo h1{
+.titulo-categoria-catalogo{
     text-align: center;
-    padding: var(--padding-grande);
+    padding-top: var(--padding-grande);
+    background-color: var(--color-neutro-claro);
 }
 
 .product-card {
