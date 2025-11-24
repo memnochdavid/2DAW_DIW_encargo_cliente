@@ -112,8 +112,6 @@ header {
 .menu-item:hover {
     background-color: var(--color-secundario);
     width: 100%;
-    /*border-radius: 4px;*/
-    /*padding-left: 0.5rem;*/
 }
 .menu-item a:hover {
     color: var(--color-neutro-oscuro);

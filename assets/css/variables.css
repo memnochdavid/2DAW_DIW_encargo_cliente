@@ -13,6 +13,7 @@
     --color-neutro-oscuro: #4B4B44;/* Gris cálido */
     --color-neutro-oscuro-trans: rgba(75, 75, 68, 0.85);/* Gris cálido transparente */
     --color-acento: #ff4b4b;       /* rojo no saturado */
+    --color-acento2: #E781A9FF; /*rosa pálido*/
 
     /*tipografías*/
     --fuente-h1:  "Edu NSW ACT Cursive", cursive;
@@ -47,5 +48,5 @@
 
     /*sombras*/
     --sombra-suave: 0 4px 6px rgba(0, 0, 0, 0.23);
-    --sombra-max: 0 6px 6px rgb(231, 129, 169);
+    --sombra-rosa: 0 6px 6px var(--color-acento2);
 }

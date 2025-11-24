@@ -2,14 +2,12 @@
     width: 100%;
     background-color: var(--color-neutro-claro);
     padding: var(--padding-grande);
-    /*max-width: 800px;*/
     margin: 0 auto;
 }
 
 .faqs h2 {
     text-align: center;
     font-family: var(--fuente-titulos), sans-serif;
-    /*margin-bottom: 2rem;*/
 }
 .faqs p{
     padding-top: 1rem;

@@ -7,8 +7,6 @@
 
 .nosotras-section h2 {
     font-size: 2.8em;
-    /*color: var(--color-primario);*/
-    /*margin-bottom: 25px;*/
     font-weight: bold;
     letter-spacing: var(--espaciado-letras);
     text-align: center;
@@ -42,7 +40,6 @@
     gap: 1rem;
     padding: 0 var(--padding-grande);
     justify-content: space-evenly;
-    /*letter-spacing: var(--espaciado-letras);*/
 }
 
 
@@ -56,7 +53,6 @@
     width: 40%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /*grid-template-columns: repeat(2, 1fr);*/
     gap: 1rem;
     padding: var(--padding-general);
     background-color: var(--color-secundario);

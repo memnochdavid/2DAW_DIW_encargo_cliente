@@ -31,7 +31,6 @@
 .dialogo-contenido input {
     padding: 10px;
     border: 1px solid var(--color-neutro-claro);
-    /*border-radius: 5px;*/
 }
 
 
@@ -77,10 +76,6 @@
 }
 
 
-/*cookies*/
-/*#cookieDialog{*/
-/*    padding: var(--padding-grande);*/
-/*}*/
 
 .cookie-content {
     background-color: var(--color-neutro-claro);
