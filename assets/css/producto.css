@@ -77,8 +77,9 @@
     overflow: hidden;
     padding: var(--padding-grande);
     text-align: center;
-
+    white-space: nowrap;
 }
+
 .relacionado-card .boton-1{
     margin: 1rem auto 1.5rem;
     display: inline-block;

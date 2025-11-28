@@ -1,13 +1,13 @@
 .nosotras-section {
-    padding: var(--padding-grande);
+    padding: var(--padding-general) 0;
     text-align: center;
     background-color: var(--color-neutro-claro);
 
 }
 
 .nosotras-section h2 {
-    font-size: 2.8em;
-    font-weight: bold;
+    font-size: var(--h1-size);
+    font-weight: var(--peso-bold);
     letter-spacing: var(--espaciado-letras);
     text-align: center;
     margin-bottom: var(--padding-general);
@@ -18,7 +18,7 @@
 }
 .nosotras-section p {
     line-height: var(--espaciado-lineas);
-    font-size: var(--h3-size);
+    font-size: var(--p-size);
     letter-spacing: var(--espaciado-letras);
 }
 
@@ -26,19 +26,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: left;
-    margin-top: 30px;
 }
 
 
 .historia-texto {
     display: flex;
-    width: 65%;
+    width: 50%;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 0 var(--padding-grande);
+    padding: 0 var(--padding-min);
     justify-content: space-evenly;
 }
 
@@ -50,7 +49,7 @@
 }
 
 .galeria-taller {
-    width: 40%;
+    width: 45%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;

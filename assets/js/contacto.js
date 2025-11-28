@@ -40,7 +40,6 @@ metodosContacto.forEach(element => {
             </a>
         `;
     }
-
     item.innerHTML = `
         <img src="${element.icon}" alt="">
         ${contentHTML}

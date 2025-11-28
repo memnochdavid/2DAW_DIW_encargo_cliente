@@ -21,11 +21,11 @@
     --fuente-texto: 'Lato', 'Nunito Sans', sans-serif;
 
     /*tamaños de los textos*/
-    --h1-size: 45px;
-    --h2-size: 32px;
-    --h3-size: 25px;
-    --p-size: 20px;
-    --small-size: 14px;
+    --h1-size: 35px;
+    --h2-size: 28px;
+    --h3-size: 23px;
+    --p-size: 16px;
+    --small-size: 12px;
 
     /*weight de los textos*/
     --peso-light: 300;
